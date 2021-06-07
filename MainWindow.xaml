@@ -1,0 +1,25 @@
+﻿<Window x:Class="SwordDamage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwordDamage"
+        mc:Ignorable="d"
+        Title="Sword Damage" Height="175" Width="300">
+    <Grid Height="159" VerticalAlignment="Bottom" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <CheckBox x:Name="flaming" Content="Flaming" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Bottom" Checked="flaming_Checked" Unchecked="flaming_Unchecked"/>
+        <CheckBox x:Name="magic" Content="Magic" Grid.Column="1" HorizontalAlignment="Left" Margin="35,14,0,0" VerticalAlignment="Bottom" Unchecked="magic_Unchecked" Checked="magic_Checked"/>
+        <Button Content="Roll for Damage " HorizontalAlignment="Left" Margin="98,0,0,0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="103" RenderTransformOrigin="0,0.501"/>
+        <TextBlock x:Name="damage" HorizontalAlignment="Left" Margin="120,0,0,0" Grid.Row="2" Text="damage" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="74"/>
+
+    </Grid>
+</Window>
